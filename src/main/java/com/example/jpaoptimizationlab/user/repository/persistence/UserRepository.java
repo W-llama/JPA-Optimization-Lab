@@ -8,6 +8,8 @@ import java.util.Optional;
 public interface UserRepository {
     Optional<User> findById(Long id);
 
+	List<User> findAll();
+
     List<User> findAllWithUserPhotosFetchJoin();
 
     User findByIdWithUserPhotosFetchJoin(Long id);

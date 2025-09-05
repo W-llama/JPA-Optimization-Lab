@@ -1,4 +1,3 @@
-// UserRepositoryImpl.java
 package com.example.jpaoptimizationlab.user.repository.persistence;
 
 import com.example.jpaoptimizationlab.user.domain.entity.User;
@@ -22,6 +21,10 @@ public class UserRepositoryImpl implements UserRepository {
         return userJpaRepository.findById(id);
     }
 
+	@Override
+	public List<User> findAll() {
+		return userJpaRepository.findAll();
+	}
     @Override
     public List<User> findAllWithUserPhotosFetchJoin() {
         return userJpaRepository.findAllWithUserPhotosFetchJoin();
