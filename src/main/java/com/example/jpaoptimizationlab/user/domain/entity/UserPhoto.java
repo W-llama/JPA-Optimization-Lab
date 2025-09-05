@@ -26,4 +26,10 @@ public class UserPhoto {
 	private Image image;
 
 	private int orderIndex; // 사진 순서 (1, 2, 3)
+
+	public UserPhoto(User user, Image image, int orderIndex) {
+		this.user = user;
+		this.image = image;
+		this.orderIndex = orderIndex;
+	}
 }

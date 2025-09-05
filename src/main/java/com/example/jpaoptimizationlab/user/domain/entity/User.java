@@ -27,4 +27,10 @@ public class User {
 	@OrderBy("orderIndex ASC")
     @BatchSize(size = 10)
 	private List<UserPhoto> userPhotos = new ArrayList<>();
+
+
+	public User(String name, String imageUrl) {
+		this.name = name;
+		this.imageUrl = imageUrl;
+	}
 }
